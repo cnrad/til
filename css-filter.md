@@ -2,4 +2,4 @@ When working on my personal site, I encountered odd behavior where an absolutely
 
 > A value other than none for the filter property results in the creation of a containing block for absolute and fixed positioned descendants unless the element it applies to is a document root element in the current browsing context.
 
-Turns out, using `blur()` essentially wraps the element in a relatively positioned container (sort of). TIL
+Turns out, using `blur()` essentially wraps the element in a relatively positioned container (sort of), which was changing the positioning of the child div. TIL
